@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Simple Notes</string>
+    <string name="some_test_title">Some test title</string>
+    <string name="some_date_example">Dec 20  2018</string>
 </resources>
