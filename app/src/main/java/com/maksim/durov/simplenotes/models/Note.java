@@ -14,6 +14,16 @@ public class Note {
         this.lastChangeTime = lastChangeTime;
     }
 
+    //title is first 12 symbols of content + "..." if content <= 15 then just only content
+    public String getTitle(){
+        return content.length()>15?content.substring(0,12)+"...":content;
+    }
+
+    public String getDateStamp(){
+        //TODO later replace with real date stamp witch will be parse from lastChangeTime
+        return "20 JAN \\n2019";
+    }
+
     public int getId() {
         return id;
     }
