@@ -14,6 +14,16 @@ public class Note {
         this.lastChangeTime = lastChangeTime;
     }
 
+    public String getTitle(){
+        //TODO later replace with real title witch should be 9 - 13 first symbols of content
+        return "some title";
+    }
+
+    public String getDateStamp(){
+        //TODO later replace with real date stamp witch parse from lastChangeTime
+        return "20 JAN \\n2019";
+    }
+
     public int getId() {
         return id;
     }
