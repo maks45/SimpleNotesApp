@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.maksim.durov.simplenotes.adapters.NotesRecyclerAdapter;
 import com.maksim.durov.simplenotes.models.Note;
+import com.maksim.durov.simplenotes.util.VerticalSpacingItemDecorator;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     List<Note> notes ;
     NotesRecyclerAdapter notesRecyclerAdapter;
     LinearLayoutManager linearLayoutManager;
+    VerticalSpacingItemDecorator verticalSpacingItemDecorator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +51,10 @@ public class MainActivity extends AppCompatActivity {
         notes.add(new Note(0,"note 4",new Date().getTime()));
         notes.add(new Note(0,"note 4",new Date().getTime()));
         notes.add(new Note(0,"long note 4 this is  loooooooong noooote",new Date().getTime()));
+        verticalSpacingItemDecorator = new VerticalSpacingItemDecorator(10);
         notesRecyclerAdapter = new NotesRecyclerAdapter(notes);
         linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.addItemDecoration(verticalSpacingItemDecorator);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(notesRecyclerAdapter);
     }
