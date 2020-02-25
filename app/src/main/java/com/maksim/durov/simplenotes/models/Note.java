@@ -19,8 +19,9 @@ public class Note {
         return content.length()>15?content.substring(0,12)+"...":content;
     }
 
+
     public String getDateStamp(){
-        //TODO later replace with real date stamp witch will be parse from lastChangeTime
+        //TODO later replace with real date stamp witch parse from lastChangeTime
         return "20 JAN \\n2019";
     }
 
