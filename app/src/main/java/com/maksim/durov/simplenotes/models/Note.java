@@ -4,11 +4,11 @@ public class Note {
 
     private int id;
     private String content;
-    private String lastChangeTime;
+    private long lastChangeTime;
 
     public Note() {}
 
-    public Note(int id,String content, String lastChangeTime) {
+    public Note(int id,String content, long lastChangeTime) {
         this.id =id;
         this.content = content;
         this.lastChangeTime = lastChangeTime;
@@ -40,11 +40,11 @@ public class Note {
         this.content = content;
     }
 
-    public String getLastChangeTime() {
+    public long getLastChangeTime() {
         return lastChangeTime;
     }
 
-    public void setLastChangeTime(String lastChangeTime) {
+    public void setLastChangeTime(long lastChangeTime) {
         this.lastChangeTime = lastChangeTime;
     }
 }
