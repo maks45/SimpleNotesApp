@@ -21,7 +21,7 @@ public class Note {
 
 
     public String getDateStamp(){
-        //TODO later replace with real date stamp witch parse from lastChangeTime
+        //TODO later replace this hardcode data with real date stamp witch parse from lastChangeTime
         return "20 JAN \\n2019";
     }
 
